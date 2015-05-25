@@ -23,7 +23,7 @@ then nav http://localhost:9090/example/ to see the demo
 	```
 	var RadioGroup = require('../lib/index.jsx');
 	var App=
-		<RadioGroup name="fruit" value="orange">
+		<RadioGroup jsxname="fruit" jsxvalue="orange">
 		  <input type="radio" value="apple" />Apple
 		  <input type="radio" value="orange" />Orange
 		  <input type="radio" value="watermelon" />Watermelon
