@@ -28,7 +28,7 @@ const component = React.createClass({
     },
     render() {
          return (
-          <div onChange={this.props.onChange}>
+          <div className="kuma-radio-group" onChange={this.props.onChange}>
             {this.props.children}
           </div>
         );
