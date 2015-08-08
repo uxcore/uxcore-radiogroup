@@ -1,6 +1,6 @@
 {
   "name": "uxcore-radiogroup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "uxcore-radiogroup ui component for react",
   "main": "lib/index.js",
   "scripts": {
