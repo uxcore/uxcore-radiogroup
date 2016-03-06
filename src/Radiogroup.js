@@ -4,6 +4,8 @@
 * @time  : 5/25 2015
 */
 
+let React = require('react'); 
+let ReactDOM = require('react-dom');
 let Item = require('./RadiogroupItem');
 let classnames = require("classnames");
 
