@@ -18,7 +18,7 @@ class Demo extends React.Component {
         let me = this;
         return (
             <RadioGroup value={me.state.value} onChange={me.handleChange.bind(me)}>
-                <Item value="apple" text="苹果"/>  
+                <Item disabled={true} value="apple" text="苹果"/>  
                 <Item value="banana" text="香蕉"/>  
                 <Item value="orange" text="橘子"/>  
             </RadioGroup> 
