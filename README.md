@@ -70,6 +70,7 @@ http://uxcore.github.io/uxcore/
 |---|---|---|---|---|
 |value|string|required|""|该 radio 所代表的值|
 |text|string|optional|""|该 radio 显示的说明|
+|disabled|boolean|optional|false|改 radio 是否被禁用|
 
 
 

@@ -2,6 +2,10 @@
 
 ---
 
+## 1.1.3
+
+`CHANGED` add disabled prop in RadioItem
+
 ## 1.1.2
 
 `CHANGED` update scaffold
