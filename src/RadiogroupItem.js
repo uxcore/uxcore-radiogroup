@@ -1,4 +1,4 @@
-let React = require('react'); 
+let React = require('react');
 let ReactDOM = require('react-dom');
 
 class RadiogroupItem extends React.Component {
@@ -15,9 +15,9 @@ class RadiogroupItem extends React.Component {
         let me = this;
         return (
             <label>
-                <input type="radio" disabled={me.props.disabled} ref="radio" className={me.props.className} checked={me.props.checked} onChange={me._handleChange.bind(me)}/>
-                <s></s>
-                {me.props.text}
+              <input type="radio" disabled={me.props.disabled} ref="radio" className={me.props.className} checked={me.props.checked} onChange={me._handleChange.bind(me)} />
+              <s></s>
+              {<span>{me.props.text}</span>}
             </label>
         )
     }
@@ -36,7 +36,8 @@ RadiogroupItem.defaultProps = {
     value: "",
     className: "kuma-checkbox",
     disabled: false,
-    onChange: () => {}
+    onChange: () => {
+    }
 }
 
 module.exports = RadiogroupItem;
