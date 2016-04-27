@@ -2,6 +2,10 @@
 
 ---
 
+## 1.1.4
+
+`CHANGED` remove peer dependency `react`
+
 ## 1.1.3
 
 `CHANGED` add disabled prop in RadioItem
