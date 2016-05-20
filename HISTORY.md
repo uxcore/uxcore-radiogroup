@@ -2,6 +2,10 @@
 
 ---
 
+## 1.2.0
+
+`CHANGED` style change
+
 ## 1.1.4
 
 `CHANGED` remove peer dependency `react`

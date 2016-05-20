@@ -6,17 +6,17 @@
  * All rights reserved.
  */
 
-.kuma-radio-group {
-    > label {
-        display: inline-block;
-        line-height: 16px;
-        s {
-            vertical-align: top;
-        }
-        span {
-            padding: 0px 20px 0px 0px;
-            display: inline-block;
-            vertical-align: top;
-        }
+@__radio-group-prefix-cls: kuma-radio-group;
+
+.@{__radio-group-prefix-cls}-item {
+    display: inline-block;
+    line-height: 16px;
+    s {
+        vertical-align: top;
     }
- }
+    .@{__radio-group-prefix-cls}-item-content {
+        padding: 0px 20px 0px 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
