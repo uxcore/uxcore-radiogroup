@@ -62,6 +62,7 @@ http://uxcore.github.io/uxcore/
 |---|---|---|---|---|
 |value|string|required|""|radioGroup 被选中的项|
 |onChange|function|required|noop|点击 radio 时触发，传入参数 value，代表被选中的项|
+|disabled|boolean|optional|false|是否为 disable 状态|
 
 
 ### Radiogroup.Item
@@ -70,7 +71,7 @@ http://uxcore.github.io/uxcore/
 |---|---|---|---|---|
 |value|string|required|""|该 radio 所代表的值|
 |text|string|optional|""|该 radio 显示的说明|
-|disabled|boolean|optional|false|改 radio 是否被禁用|
+|disabled|boolean|optional|-|Item 是否为 disable 状态，具有比 Group 更高的优先级|
 
 
 

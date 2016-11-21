@@ -1,0 +1,51 @@
+const React = require('react');
+
+class RadiogroupItem extends React.Component {
+
+  handleChange() {
+    const me = this;
+    me.props.onChange(me.props.value);
+  }
+
+  render() {
+    const me = this;
+    let disabled = false;
+    if (me.props.disabled !== undefined) {
+      disabled = me.props.disabled;
+    } else if (me.props.jsxdisabled !== undefined) {
+      disabled = me.props.jsxdisabled;
+    }
+    return (
+      <label className={`${me.props.prefixCls}`}>
+        <input
+          type="radio"
+          disabled={disabled}
+          className="kuma-checkbox"
+          checked={me.props.checked}
+          onChange={me.handleChange.bind(me)}
+        />
+        <s />
+        <span className={`${me.props.prefixCls}-content`}>{me.props.text}</span>
+      </label>
+    );
+  }
+}
+
+RadiogroupItem.displayName = 'RadiogroupItem';
+RadiogroupItem.propTypes = {
+  prefixCls: React.PropTypes.string,
+  text: React.PropTypes.string,
+  value: React.PropTypes.string,
+  className: React.PropTypes.string,
+  disabled: React.PropTypes.bool,
+  onChange: React.PropTypes.func,
+};
+RadiogroupItem.defaultProps = {
+  prefixCls: 'kuma-radio-group-item',
+  text: '',
+  value: '',
+  className: 'kuma-checkbox',
+  onChange: () => { },
+};
+
+module.exports = RadiogroupItem;

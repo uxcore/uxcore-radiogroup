@@ -2,6 +2,10 @@
 
 ---
 
+## 1.2.1
+
+`CHANGED` support new props `disabled`
+
 ## 1.2.0
 
 `CHANGED` style change
