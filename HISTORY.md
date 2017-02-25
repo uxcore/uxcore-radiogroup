@@ -2,6 +2,10 @@
 
 ---
 
+## 1.2.2
+
+`CHANGED` margin is adjusted
+
 ## 1.2.1
 
 `CHANGED` support new props `disabled`
