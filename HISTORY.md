@@ -2,6 +2,10 @@
 
 ---
 
+## 1.2.3
+
+`CHANGED` adjust space between radio & text
+
 ## 1.2.2
 
 `CHANGED` margin is adjusted
