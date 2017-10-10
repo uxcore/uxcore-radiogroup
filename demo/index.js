@@ -6,5 +6,6 @@
  * All rights reserved.
  */
 
- var Demo = require('./RadiogroupDemo');
- ReactDOM.render(<Demo/>, document.getElementById('UXCoreDemo'));
+import Demo from './RadiogroupDemo';
+
+ReactDOM.render(<Demo/>, document.getElementById('UXCoreDemo'));
