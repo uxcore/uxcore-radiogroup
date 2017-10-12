@@ -1,3 +1,4 @@
+import React from 'react';
 import RadioGroup from '../src';
 
 const { Item } = RadioGroup;
