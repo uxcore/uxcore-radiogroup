@@ -1,4 +1,5 @@
-const React = require('react');
+import React from 'react';
+import PropTypes from 'prop-types';
 
 class RadiogroupItem extends React.Component {
 
@@ -33,12 +34,12 @@ class RadiogroupItem extends React.Component {
 
 RadiogroupItem.displayName = 'RadiogroupItem';
 RadiogroupItem.propTypes = {
-  prefixCls: React.PropTypes.string,
-  text: React.PropTypes.string,
-  value: React.PropTypes.string,
-  className: React.PropTypes.string,
-  disabled: React.PropTypes.bool,
-  onChange: React.PropTypes.func,
+  prefixCls: PropTypes.string,
+  text: PropTypes.string,
+  value: PropTypes.string,
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  onChange: PropTypes.func,
 };
 RadiogroupItem.defaultProps = {
   prefixCls: 'kuma-radio-group-item',
@@ -48,4 +49,4 @@ RadiogroupItem.defaultProps = {
   onChange: () => { },
 };
 
-module.exports = RadiogroupItem;
+export default RadiogroupItem;

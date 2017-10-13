@@ -4,10 +4,10 @@
 * @time  : 5/25 2015
 */
 
-const React = require('react');
-const classnames = require('classnames');
-
-const Item = require('./RadiogroupItem');
+import React from 'react';
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
+import Item from './RadiogroupItem';
 
 class Radiogroup extends React.Component {
   constructor(props) {
@@ -53,14 +53,13 @@ class Radiogroup extends React.Component {
       </div>
     );
   }
-
 }
 
 Radiogroup.displayName = 'Radiogroup';
 Radiogroup.propTypes = {
-  value: React.PropTypes.string,
-  defaultValue: React.PropTypes.string,
-  onChange: React.PropTypes.func,
+  value: PropTypes.string,
+  defaultValue: PropTypes.string,
+  onChange: PropTypes.func,
 };
 Radiogroup.defaultProps = {
   value: '',
@@ -70,4 +69,4 @@ Radiogroup.defaultProps = {
 Radiogroup.Item = Item;
 
 
-module.exports = Radiogroup;
+export default Radiogroup;
