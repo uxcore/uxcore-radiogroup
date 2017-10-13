@@ -2,6 +2,10 @@
 
 ---
 
+## 1.2.4
+
+`CHANGED` fit React@15
+
 ## 1.2.3
 
 `CHANGED` adjust space between radio & text
