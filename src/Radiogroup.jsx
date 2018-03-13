@@ -10,16 +10,11 @@ import classnames from 'classnames';
 import Item from './RadiogroupItem';
 
 class Radiogroup extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      defaultValue: props.defaultValue,
-    };
-  }
-
   handleChange(value) {
     const me = this;
-    me.props.onChange(value);
+    if (me.props.value !== value) {
+      me.props.onChange(value);
+    }
   }
 
   processChild() {
@@ -58,7 +53,6 @@ class Radiogroup extends React.Component {
 Radiogroup.displayName = 'Radiogroup';
 Radiogroup.propTypes = {
   value: PropTypes.string,
-  defaultValue: PropTypes.string,
   onChange: PropTypes.func,
 };
 Radiogroup.defaultProps = {

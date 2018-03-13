@@ -2,6 +2,11 @@
 
 ---
 
+## 1.3.0
+
+* `CHANGED` remove useless defaultValue logic
+* `CHANGED` fire `onChange` only when value is changed
+
 ## 1.2.4
 
 `CHANGED` fit React@15
