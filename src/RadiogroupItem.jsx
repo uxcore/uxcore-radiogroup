@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 class RadiogroupItem extends React.Component {
-
   handleChange() {
     const me = this;
     me.props.onChange(me.props.value);
@@ -17,7 +17,11 @@ class RadiogroupItem extends React.Component {
       disabled = me.props.jsxdisabled;
     }
     return (
-      <label className={`${me.props.prefixCls}`}>
+      <label
+        className={classnames(`${me.props.prefixCls}`, {
+          [`${me.props.prefixCls}__disabled`]: disabled,
+        })}
+      >
         <input
           type="radio"
           disabled={disabled}

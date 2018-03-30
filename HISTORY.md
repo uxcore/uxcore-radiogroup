@@ -2,6 +2,11 @@
 
 ---
 
+
+## 1.3.1
+
+* `CHANGED` style adjustment(disabled enhancement)
+
 ## 1.3.0
 
 * `CHANGED` remove useless defaultValue logic
