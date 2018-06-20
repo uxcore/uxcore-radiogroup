@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import TestUtils, {Simulate} from 'react-addons-test-utils';
 import assign from 'object-assign';
 import Enzyme, {mount, shallow} from 'enzyme';
-import Adapter from 'enzyme-adapter-react-15';
+import Adapter from 'enzyme-adapter-react-16';
 import Radiogroup from '../src';
 import RadiogroupItem from '../src/RadiogroupItem';
 
