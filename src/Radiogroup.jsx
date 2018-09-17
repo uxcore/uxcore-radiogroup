@@ -40,7 +40,7 @@ class Radiogroup extends React.Component {
     return (
       <div
         className={classnames({
-          "kuma-radio-group": true,
+          [me.props.prefixCls]: true,
           [me.props.className]: !!me.props.className
         })}
       >
@@ -57,8 +57,8 @@ Radiogroup.propTypes = {
   onChange: PropTypes.func
 };
 Radiogroup.defaultProps = {
-  value: "",
   prefixCls: "kuma-radio-group",
+  value: "",
   onChange: () => {}
 };
 
