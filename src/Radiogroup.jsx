@@ -1,13 +1,13 @@
 /**
-* thanks for https://github.com/chenglou/react-radio-group
-* @author: zhouquan.yezq
-* @time  : 5/25 2015
-*/
+ * thanks for https://github.com/chenglou/react-radio-group
+ * @author: zhouquan.yezq
+ * @time  : 5/25 2015
+ */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import classnames from 'classnames';
-import Item from './RadiogroupItem';
+import React from "react";
+import PropTypes from "prop-types";
+import classnames from "classnames";
+import Item from "./RadiogroupItem";
 
 class Radiogroup extends React.Component {
   handleChange(value) {
@@ -22,12 +22,12 @@ class Radiogroup extends React.Component {
     const length = React.Children.count(me.props.children);
     if (!length) return false;
     const elements = React.Children.map(me.props.children, (child, index) => {
-      if (!!child.type && child.type.displayName === 'RadiogroupItem') {
+      if (!!child.type && child.type.displayName === "RadiogroupItem") {
         return React.cloneElement(child, {
           jsxdisabled: me.props.disabled,
           onChange: me.handleChange.bind(me),
           key: index,
-          checked: me.props.value === child.props.value,
+          checked: me.props.value === child.props.value
         });
       }
       return null;
@@ -40,8 +40,8 @@ class Radiogroup extends React.Component {
     return (
       <div
         className={classnames({
-          [me.props.prefixCls]: true,
-          [me.props.className]: !!me.props.className,
+          "kuma-radio-group": true,
+          [me.props.className]: !!me.props.className
         })}
       >
         {me.processChild()}
@@ -50,19 +50,18 @@ class Radiogroup extends React.Component {
   }
 }
 
-Radiogroup.displayName = 'Radiogroup';
+Radiogroup.displayName = "Radiogroup";
 Radiogroup.propTypes = {
   prefixCls: PropTypes.string,
   value: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func
 };
 Radiogroup.defaultProps = {
-  value: '',
-  prefixCls: 'kuma-radio-group',
-  onChange: () => { },
+  value: "",
+  prefixCls: "kuma-radio-group",
+  onChange: () => {}
 };
 
 Radiogroup.Item = Item;
-
 
 export default Radiogroup;
